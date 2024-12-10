@@ -13,11 +13,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 
-mongose.connect("mongodb+srv://maakhan:iqMZFeqCyvDlNh72@cluster0.l9s6zof.mongodb.net/bannerDb", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 30000,
-}).then(()=>{
+mongose.connect("mongodb+srv://maakhan:iqMZFeqCyvDlNh72@cluster0.l9s6zof.mongodb.net/bannerDb")
+.then(()=>{
     console.log("database connect");
 }).catch(()=>{
     console.log("error with db");
