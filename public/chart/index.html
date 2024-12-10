@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Chart</title>
+    <style>
+        .dataTable{
+            max-width: 600px;
+            max-height: 600px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table class="dataTable">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>300x600</th>
+                <th>300x250</th>
+                <th>320x50</th>
+                <th>728x90</th>
+                <th>Total Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <td>Mental Health</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row2">
+                <td>Physical Fitness</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row3">
+                <td>Nutrition</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row4">
+                <td>Mindfulness</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row5">
+                <td>Self-Care</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="row6">
+                <td>All of the Above</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br/><br/>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+    <!-- <canvas id="myChart" width="400" height="200"></canvas>
+    <!-- Include Chart.js from a CDN
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- Include your script.js file -->
+    <script src="./js/chart.js"></script>
+</body>
+</html>
