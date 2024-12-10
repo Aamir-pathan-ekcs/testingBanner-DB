@@ -4,32 +4,32 @@ document.addEventListener('DOMContentLoaded', function () {
             var percentages = {};
              const response = await fetch('/count');
              const data = await response.json();
-             console.log(data);
+            // console.log(data);
             const getVl = [
-                data[0].GetMentCriteria.length,
-                data[0].GetFitCriteria.length,
-                data[0].GetNutCriteria.length,
-                data[0].GetMindCriteria.length,
-                data[0].GetSelfCriteria.length,
-                data[0].GetAllCriteria.length,
-                data[1].GetMentCriteriaTwo.length,
-                data[1].GetFitCriteriaTwo.length,
-                data[1].GetNutCriteriaTwo.length,
-                data[1].GetMindCriteriaTwo.length,
-                data[1].GetSelfCriteriaTwo.length,
-                data[1].GetAllCriteriaTwo.length,
-                data[2].GetMentCriteriathreeTwo.length,
-                data[2].GetFitCriteriathreeTwo.length,
-                data[2].GetNutCriteriathreeTwo.length,
-                data[2].GetMindCriteriathreeTwo.length,
-                data[2].GetSelfCriteriathreeTwo.length,
-                data[2].GetAllCriteriathreeTwo.length,
-                data[3].GetMentCriteriasevenTwo.length,
-                data[3].GetFitCriteriasevenTwo.length,
-                data[3].GetNutCriteriasevenTwo.length,
-                data[3].GetMindCriteriasevenTwo.length,
-                data[3].GetSelfCriteriasevenTwo.length,
-                data[3].GetAllCriteriasevenTwo.length
+                data.mentalHealth.sixNotedCount.length,
+                data.physicalFitness.sixNotedCount.length,
+                data.nutrition.sixNotedCount.length,
+                data.mindfulness.sixNotedCount.length,
+                data.selfCare.sixNotedCount.length,
+                data.allOfTheAbove.sixNotedCount.length,
+                data.mentalHealth.twoNotedCount.length,
+                data.physicalFitness.twoNotedCount.length,
+                data.nutrition.twoNotedCount.length,
+                data.mindfulness.twoNotedCount.length,
+                data.selfCare.twoNotedCount.length,
+                data.allOfTheAbove.twoNotedCount.length,
+                data.mentalHealth.threeNotedCount.length,
+                data.physicalFitness.threeNotedCount.length,
+                data.nutrition.threeNotedCount.length,
+                data.mindfulness.threeNotedCount.length,
+                data.selfCare.threeNotedCount.length,
+                data.allOfTheAbove.threeNotedCount.length,
+                data.mentalHealth.sevenNotedCount.length,
+                data.physicalFitness.sevenNotedCount.length,
+                data.nutrition.sevenNotedCount.length,
+                data.mindfulness.sevenNotedCount.length,
+                data.selfCare.sevenNotedCount.length,
+                data.allOfTheAbove.sevenNotedCount.length
             ];
             const rows = ['row1', 'row2', 'row3', 'row4', 'row5', 'row6'];
             let valueGet = 0;
